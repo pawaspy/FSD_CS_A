@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/form.css">
+    
+</head>
+<body>
+    <div class="container">
+    <div class="form">
+    <form action="submit" method="post" onsubmit="validate()"> 
+        <label for="fname">First Name :</label>
+        <input type="text" name="fname" placeholder="First Name" required><br><br>
+        <label for="lname">Last Name :</label>
+        <input type="text" name="lname" placeholder="Last Name" required><br><br>
+        <label for="Cnumber">Contact Number :</label>
+        <input type="number" name="Cnumber" placeholder="Phone Number" required><br><br>
+        <label for="email">Email :</label>
+        <input type="email" name="email" placeholder="G-mail" required><br><br>
+        <label for="gender">Gender</label><br><br>
+        <input type="radio" name="gender" value="male" required>Male <br><br>
+        <input type="radio" name="gender" value="female" required>Female <br><br>
+        <input type="radio" name="gender" value="other" required>Other <br><br>
+        <label for="dob">Date of birth</label> <br><br>
+        <input type="date" name="dob" placeholder="Enter date of birth">
+        <label for="branch">Branch</label><br><br>
+        <select name="branch">
+            <option value="CS">CS</option>
+            <option value="CSE">CSE</option>
+            <option value="CSE-AIML">Computer Scinece Engineering in AIML</option>
+            <option value="CS-DS">Computer Science in Data Science</option>
+            <option value="ECE">Electronics and Communication Engineering</option>
+            <option value="IT">Information Technology</option>
+        </select>
+        <input type="submit" value="Register">
+    </form>
+</div>
+</div>
+</body>
+</html>

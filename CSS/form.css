@@ -1,0 +1,14 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+.container{
+    border: 2px solid green;
+    background-color: lightcoral;
+    display: flex;
+    flex-direction: column;
+}
+.form{
+    width: 50%;
+    justify-content: center;
+}

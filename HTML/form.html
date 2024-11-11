@@ -5,24 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/CSS/form.css">
-    
+    <script>
+        function validate(){
+    const fname = document.getElementsByName("fname")
+    const lname = document.getElementsByName("lname")
+    const num = document.getElementsByName("Cnumber")
+    const email = document.getElementsByName("email")
+    const dob = document.getElementsByName("dob")
+    //console.log(fname, lname)
+    if(fname == "" || lname == ""){
+        alert("Name cannot be empty")
+        return false
+    }
+
+}
+    </script>
 </head>
 <body>
     <div class="container">
     <div class="form">
     <form action="submit" method="post" onsubmit="validate()"> 
         <label for="fname">First Name :</label>
-        <input type="text" name="fname" placeholder="First Name" required><br><br>
+        <input type="text" name="fname" placeholder="First Name" ><br><br>
         <label for="lname">Last Name :</label>
-        <input type="text" name="lname" placeholder="Last Name" required><br><br>
+        <input type="text" name="lname" placeholder="Last Name" ><br><br>
         <label for="Cnumber">Contact Number :</label>
-        <input type="number" name="Cnumber" placeholder="Phone Number" required><br><br>
+        <input type="number" name="Cnumber" placeholder="Phone Number" ><br><br>
         <label for="email">Email :</label>
-        <input type="email" name="email" placeholder="G-mail" required><br><br>
+        <input type="email" name="email" placeholder="G-mail" ><br><br>
         <label for="gender">Gender</label><br><br>
-        <input type="radio" name="gender" value="male" required>Male <br><br>
-        <input type="radio" name="gender" value="female" required>Female <br><br>
-        <input type="radio" name="gender" value="other" required>Other <br><br>
+        <input type="radio" name="gender" value="male" >Male <br><br>
+        <input type="radio" name="gender" value="female" >Female <br><br>
+        <input type="radio" name="gender" value="other" >Other <br><br>
         <label for="dob">Date of birth</label> <br><br>
         <input type="date" name="dob" placeholder="Enter date of birth">
         <label for="branch">Branch</label><br><br>
